@@ -1,3 +1,6 @@
+# -*- coding: UTF-8 -*-
+from __future__ import unicode_literals
+
 import requests
 from bitcoin.backend.historico.historico_bitcoin import gravar
 from datetime import datetime
