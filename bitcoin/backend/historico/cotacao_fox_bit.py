@@ -2,9 +2,9 @@
 from __future__ import unicode_literals
 
 import requests
-from bitcoin.backend.historico.historico_bitcoin import gravar
 from datetime import datetime
 import time
+from bitcoin.backend.historico.historico_bitcoin import gravar
 #==================================================
 def consultar_indicadores_bitcoin():
     try:
