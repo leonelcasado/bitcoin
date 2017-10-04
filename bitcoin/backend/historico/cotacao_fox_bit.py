@@ -22,5 +22,5 @@ def consultar_indicadores_bitcoin():
     except Exception as e:
         print(e)
 #==================================================
-#consultar_indicadores_bitcoin()
+consultar_indicadores_bitcoin()
 #==================================================
