@@ -1,6 +1,7 @@
 import requests
 from bitcoin.backend.historico.historico_bitcoin import gravar
 from datetime import datetime
+import time
 #==================================================
 def consultar_indicadores_bitcoin():
     try:
@@ -22,5 +23,10 @@ def consultar_indicadores_bitcoin():
     except Exception as e:
         print(e)
 #==================================================
-consultar_indicadores_bitcoin()
+def execute():
+    while(True):
+        consultar_indicadores_bitcoin()
+        time.sleep(5)
+#==================================================
+execute()
 #==================================================
