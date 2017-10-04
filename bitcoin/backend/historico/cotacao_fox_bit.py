@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import requests
 from datetime import datetime
 import time
-from bitcoin.backend.historico.historico_bitcoin import gravar
+#from bitcoin.backend.historico.historico_bitcoin import gravar
 #==================================================
 def consultar_indicadores_bitcoin():
     try:
@@ -21,7 +21,7 @@ def consultar_indicadores_bitcoin():
         print('Venda:%s' % json_data['sell'])
         print('Volume:%s' % json_data['vol'])        
         #==================================================
-        gravar(json_data['high'],json_data['low'],json_data['buy'],json_data['sell'],json_data['vol'])
+        #gravar(json_data['high'],json_data['low'],json_data['buy'],json_data['sell'],json_data['vol'])
         #==================================================
     except Exception as e:
         print(e)
